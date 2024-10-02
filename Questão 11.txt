@@ -1,0 +1,12 @@
+const vetor = [1, 7, 15, 16, 26];
+
+let crescente = true;
+
+for (let i = 1; i < vetor.length; i++) {
+    if (vetor[i] < vetor[i - 1]) {
+        crescente = false;
+        break;
+    }
+}
+
+console.log(crescente);

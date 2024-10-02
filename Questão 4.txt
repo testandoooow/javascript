@@ -1,0 +1,6 @@
+const nomes1 = ["João", "Maria", "Lucas", "André"];
+const nomes2 = ["Pedro", "Ana", "Joana", "Milena", "Giulia"];
+
+const nomes = nomes1.concat(nomes2);
+
+console.log(nomes);

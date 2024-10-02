@@ -1,0 +1,36 @@
+const idadesGrupo1 = [25, 18, 32];
+const idadesGrupo2 = [22, 30, 28];
+
+const idade = idadesGrupo1.concat(idadesGrupo2);
+
+function ordenarCrescente(array){
+    return array.sort(function(a, b){
+        return a - b;
+    });
+}
+let grupo1 = [];
+let grupo2 = [];
+
+const idades = ordenarCrescente(idade);
+
+var i = 0;
+function teste(array){
+    return array.map(function(numero){
+        if(numero <= 25){
+            grupo1[i] = numero;
+        } else {
+            grupo2[i] = numero;
+        }
+        i++;
+        i >= 3 ? i = 0 : console.log("zz");
+
+}, 0);
+}
+
+teste(idades);
+
+console.log(grupo1);
+console.log(grupo2);
+
+
+//QUESTÃO 10

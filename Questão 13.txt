@@ -1,0 +1,18 @@
+var faixa;
+function faixaEtaria(numero){
+
+    if(numero < 14){
+        faixa = "Criança";
+    } else if(numero < 20){
+        faixa = "Adolescente"
+    } else if(numero < 65){
+        faixa = "Adulto";
+    } else {
+        faixa = "Idoso";
+    }
+
+    return faixa;
+}
+console.log(faixaEtaria(70));
+
+//QUESTÃO 13;

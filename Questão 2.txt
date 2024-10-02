@@ -1,0 +1,10 @@
+numeros = [1, 2, 3, 4, 5, 10, 20, 32, 40, 1002, 1320, 1326];
+function multiplicar(array, multiplicador){
+    return array.map(function(numero){
+        return numero * multiplicador;
+    }, 0);
+}
+
+console.log(multiplicar(numeros, 5));
+*/
+//SEGUNDA QUESTÃO ^^;

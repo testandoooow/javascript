@@ -1,0 +1,24 @@
+let notas = [7, 8, 9];
+
+function calcularMedia(array){
+    return array.reduce(function(total, numero){
+        return total + numero;
+    }, 0);
+}
+
+var soma = calcularMedia(notas);
+var media = soma / notas.length;
+var situacao;
+
+function verificarMedia(){
+if(media >= 7){
+    situacao = "Aprovado";
+} else if(media >= 4){
+    situacao = "Reprovado com direito a recuperação";
+} else {
+    situacao = "Reprovado sem direito a prova de recuperação";
+}
+
+return situacao;
+}
+console.log(verificarMedia());

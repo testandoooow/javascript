@@ -1,0 +1,16 @@
+var desconto;
+
+function calcularPreco(quantidade, valor){
+
+    var total = valor * quantidade;
+    if(quantidade >= 10){
+        desconto = 0.20;
+    } else if(quantidade >= 5){
+        desconto = 0.10;
+    }
+
+    return total - (desconto * total);
+}
+
+console.log(calcularPreco(10, 100));
+//QUESTÃO 18;

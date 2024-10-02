@@ -1,0 +1,13 @@
+function pares(array){
+    return array.filter(function(numero){
+        return numero % 2 === 0; //filtra apenas os números pares
+    })
+}
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let numero = [];
+numero = pares(numeros);
+
+console.log(numero);
+
+
+//PRIMEIRA QUESTÃO ^^

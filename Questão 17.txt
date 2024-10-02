@@ -1,0 +1,16 @@
+var desconto;
+
+function calcularPreco(cartegoria, valor){
+    if(cartegoria === "Premium"){
+        desconto = 0.20;
+        return valor - (desconto * valor);
+    } else {
+        desconto = 0.10;
+        return valor - (desconto * valor);
+}
+}
+
+console.log(calcularPreco("Regular", 100));
+
+
+//QUESTÃO 17;

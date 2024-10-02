@@ -1,0 +1,13 @@
+var info;
+
+function impares(numero){
+    if(numero % 2 === 0){
+        info = "Numero par";        
+    } else {
+        info = "Numero impar";
+    }
+
+    return info;
+}
+
+console.log(impares(5));

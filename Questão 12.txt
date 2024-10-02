@@ -1,0 +1,30 @@
+let numero = [1, 5, 9, 10, 15, 16, 18, 22, 27, 36];
+
+function pares(array){
+    return array.filter(function(numero){
+        return numero % 2 === 0; //filtra apenas os números pares
+    })
+}
+
+let par = pares(numero);
+
+function impares(array){
+    return array.filter(function(numero){
+        return numero % 2 === 1; //filtra apenas os números pares
+    })
+}
+
+let impar = impares(numero);
+
+function ordenarCrescente(array){
+    return array.sort(function(a, b){
+        return a - b;
+    });
+}
+
+let imparCrescente = ordenarCrescente(impar);
+let parCrescente = ordenarCrescente(par);
+
+let numeros = imparCrescente.concat(parCrescente);
+
+console.log(numeros);

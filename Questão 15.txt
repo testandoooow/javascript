@@ -1,0 +1,14 @@
+var info;
+function verificarNumero(numero){
+    if(numero === 0){
+        info = "Numero zero";
+    } else if(numero < 0){
+        info = "Numero negativo";
+    } else {
+        info = "Numero positivo";
+    }
+
+    return info;
+}
+
+console.log(verificarNumero(10));

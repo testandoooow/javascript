@@ -1,0 +1,13 @@
+const precos = [10, 20, 30];
+const precos2 = [15, 25, 35];
+var desconto = 0.10;
+
+function calcularPreco(array){
+    return array.map(function(numero){
+        return numero + (desconto * numero);
+    }, 0);
+}
+
+const preco = precos.concat(precos2);;
+console.log(calcularPreco(preco));
+//NONA QUESTÃO;
